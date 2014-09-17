@@ -1,0 +1,32 @@
+{
+  "name": "karma-simple-ci-integration",
+  "version": "0.1.0",
+  "description": "Simple karma example with CI integration (jenkins + sonar)",
+  "homepage": "https://github.com/jemacchi/karma-simple-ci-integration",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jemacchi/karma-simple-ci-integration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jemacchi/karma-simple-ci-integration/issues"
+  },
+  "licenses": [
+    {
+      "type": "GPL2",
+      "url": "https://github.com/jemacchi/karma-simple-ci-integration/blob/master/LICENSE"
+    }
+  ],
+  "main": "sqrt.js",
+  "scripts": {
+    "test": "grunt karma:test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-coverage": "*",
+    "karma-junit-reporter": "*",
+    "karma-qunit": "*"
+  },
+  "author": "Jose Macchi"
+}
