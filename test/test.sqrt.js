@@ -1,5 +1,7 @@
 QUnit.config.autostart = false;
 
+QUnit.module('SQRT function Test');
+
 test("sqrt - should compute the square root of 4 as 2", function() {
 	ok( 2 == My.sqrt(4), "Passed!" );
 });

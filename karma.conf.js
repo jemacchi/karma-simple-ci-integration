@@ -11,10 +11,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './lib/qunit-1.15.0.js',
-	  /*'./app/scripts/app.js',*/
-	  './app/scripts/sqrt.js',
+      './lib/qunit-1.15.0.js',	
+	  './app/scripts/libs/angular-1.2.1.js',
+	  './app/scripts/app.js',
+	  './app/scripts/services/ContactService.js',
+	  './app/scripts/controllers/ContactController.js',
+	  './app/scripts/libs/sqrt.js',
 	  './test/test.sqrt.js',	  
+	  './test/test.contactController.js',	  
     ],
 
 
@@ -28,9 +32,13 @@ module.exports = function(config) {
 	reporters: ['progress','coverage','junit'],
 	
     preprocessors: { 
-		/*'./scripts/app/app.js': ['coverage'] ,*/
+        './app/scripts/app.js': ['coverage'] ,
+	    './app/scripts/services/ContactService.js': ['coverage'] ,
+	    './app/scripts/controllers/ContactController.js': ['coverage'] ,
+	    './app/scripts/libs/sqrt.js': ['coverage'] ,
 		'./app/scripts/sqrt.js': ['coverage'] ,
-	    './test/test.sqrt.js': ['coverage'] ,		
+	    './test/test.sqrt.js': ['coverage'] ,
+	    './test/test.contactController.js': ['coverage'] ,	  		
 	},
 	
 	// optionally, configure the reporter
