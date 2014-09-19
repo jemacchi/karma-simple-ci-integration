@@ -62,7 +62,7 @@ sonar.dynamicAnalysis=reuseReports
 sonar.javascript.jstestdriver.reportsPath=./script/tests/reports/jasmine
 sonar.javascript.lcov.reportPath=./script/tests/reports/coverage/Chrome 35.0.1916 (Windows 7)/lcov.info
 javascript-module.sonar.exclusions=**/packages/**/*, projectFolder/Content/**/*
-´´´
+```
  
 At the end, every time that jenkins execute your karma configuration, this one will execute tests and will place reports on the specified folders.
 Then, sonar plugin will tell Sonar from where to take generated reports, and will present them into the Sonar format (that is why we get JUnit and LCOV formats as output format from Karma)
