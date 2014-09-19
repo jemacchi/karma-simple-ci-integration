@@ -26,9 +26,7 @@ Simply execute following commands:
 Basically, once you have the project running, then you have 2 important approachs on how to use developed TESTs to address any concern.
 
 ### For developers
-If you are a UI Dev and you want to check how your code is working fine (considering tests as you validation tool) then you should change/set the 
-
-singleRun option to false in karma.conf.js file.
+If you are a UI Dev and you want to check how your code is working fine (considering tests as you validation tool) then you should change/set the singleRun option to false in karma.conf.js file.
 
 That will keep browsers opened (those declared in Karma config file) and tests running every time that your "files" change. 
 It´s similar to have a continue checking process on your code.
@@ -56,7 +54,7 @@ Finally, you will have to config the reports folders at the SONAR plugin (on jen
 
 Something like this would be the right configuration on your plugin:
 
-´´´
+```javascript
 sonar.projectVersion=1.0.0.1
 sonar.projectKey=ProjectKey
 sonar.projectName=ProjectKey
