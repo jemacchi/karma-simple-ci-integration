@@ -67,6 +67,8 @@ javascript-module.sonar.exclusions=**/packages/**/*, projectFolder/Content/**/*
 At the end, every time that jenkins execute your karma configuration, this one will execute tests and will place reports on the specified folders.
 Then, sonar plugin will tell Sonar from where to take generated reports, and will present them into the Sonar format (that is why we get JUnit and LCOV formats as output format from Karma)
  
+Update (25/9/2014):  If you prefer it´s possible to use this plugin https://wiki.jenkins-ci.org/display/JENKINS/NodeJS+Plugin  from Jenkins, that would made easier to configure calls to commands like "karma start"
+ 
 ## Author
 
 [Jose Macchi](https://github.com/jemacchi)
